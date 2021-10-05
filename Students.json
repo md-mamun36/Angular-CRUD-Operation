@@ -1,0 +1,21 @@
+{
+    "students": [{
+        "id": 1,
+        "name": "Rakib",
+        "city": "Chadpur",
+    "gender":"Male",
+    "department":"Java"
+    }, {
+        "id": 2,
+        "name": "Kamrul",
+        "city": "Shoriyatpur",
+    "gender":"Male",
+    "department":"Youtube"
+    },{
+        "id": 3,
+        "name": "Sathi",
+        "city": "Rajshi",
+    "gender":"Female",
+    "department":"SEO"
+    }]
+}

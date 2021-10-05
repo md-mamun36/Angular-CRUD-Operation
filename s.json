@@ -1,0 +1,53 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Rakib",
+      "city": "Chadpur",
+      "gender": "Male",
+      "department": "Java"
+    },
+    {
+      "id": 2,
+      "name": "Kamrul",
+      "city": "Shoriyatpur",
+      "gender": "Male",
+      "department": "Youtube"
+    },
+    {
+      "name": "fatema",
+      "city": "dhaka",
+      "gender": "female",
+      "department": "rr",
+      "id": 3
+    },
+    {
+      "name": "rakib",
+      "city": "mohammadpur",
+      "gender": "gender",
+      "department": "c atagory",
+      "id": 4
+    },
+    {
+      "name": "goni",
+      "city": "khulna",
+      "gender": "male",
+      "department": "ccc",
+      "id": 5
+    },
+    {
+      "name": "harun",
+      "city": "qatar",
+      "gender": "male",
+      "department": "worker",
+      "id": 6
+    },
+    {
+      "name": "kabir",
+      "city": "dubai",
+      "gender": "male",
+      "department": "ddd",
+      "id": 7
+    }
+  ]
+}

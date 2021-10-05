@@ -1,0 +1,46 @@
+  <!--creating a form-->
+<div class="card">
+    <div class="card-body">
+      <form [formGroup]="angForm" novalidate>
+        <div class="form-group">
+          <label class="col-md-4">Student Name</label>
+          <input type="text" class="form-control" formControlName="name" #name />
+        </div>
+        <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['name'].errors.required">
+            Name is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4">Student City</label>
+          <input type="text" class="form-control" formControlName="city" #city/>
+        </div>
+        <div *ngIf="angForm.controls['city'].invalid && (angForm.controls['city'].dirty || angForm.controls['city'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['city'].errors.required">
+            City is required
+          </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4">Student Gender</label>
+            <input type="text" class="form-control" formControlName="gender" #gender/>
+          </div>
+          <div *ngIf="angForm.controls['gender'].invalid && (angForm.controls['gender'].dirty || angForm.controls['gender'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['gender'].errors.required">
+              Gender is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4">Student Department</label>
+            <input type="text" class="form-control" formControlName="department" #department/>
+          </div>
+          <div *ngIf="angForm.controls['department'].invalid && (angForm.controls['department'].dirty || angForm.controls['department'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['department'].errors.required">
+              Department is required.
+            </div>
+          </div>
+          <div class="form-group" >
+            <button style="width: 100px;" (click)="addStudents(name, city,  gender, department)" [disabled]="angForm.pristine || angForm.invalid" class="btn btn-primary">Add</button>
+          </div>
+      </form>
+    </div>
+  </div>
